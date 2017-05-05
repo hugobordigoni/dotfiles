@@ -1,0 +1,8 @@
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+
+# Symlinking the dotfiles
+ln -sf $DOTFILES_ROOT/vim/vimrc $HOME/.vimrc
+ln -sf $DOTFILES_ROOT/tmux/tmux.conf $HOME/.tmux.conf
+ln -sf $DOTFILES_ROOT/zsh/zshrc $HOME/.zshrc
+ln -sf $DOTFILES_ROOT/zsh/zprofile $HOME/.zprofile

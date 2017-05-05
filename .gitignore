@@ -1,0 +1,8 @@
+# Package
+vim/bundle/
+
+# OSX
+.DS_Store
+
+# Oh My Zsh
+oh-my-zsh/

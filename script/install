@@ -1,0 +1,5 @@
+# ZSH
+chsh -s /bin/zsh
+
+# Oh My Zosh
+git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.dotfiles/oh-my-zsh
