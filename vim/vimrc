@@ -38,7 +38,12 @@ set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
 
-" PEP8 indent
+" Default indent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" Python PEP8 indent
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
@@ -46,7 +51,13 @@ au BufNewFile,BufRead *.py
     \ set textwidth=79 |
     \ set expandtab |
     \ set autoindent |
-    \ set fileformat=unix |
+    \ set fileformat=unix
+
+" Web indent
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
 
 " Unnecessary Whitespace
 highlight BadWhitespace ctermbg=red guibg=red

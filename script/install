@@ -1,5 +1,12 @@
 # ZSH
+bash $HOME/.dotfiles/zsh/install.sh
 chsh -s /bin/zsh
+
+# Tmux
+bash $HOME/.dotfiles/tmux/install.sh
+
+# Vim
+bash $HOME/.dotfiles/vim/install.sh
 
 # Oh My Zosh
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.dotfiles/oh-my-zsh
