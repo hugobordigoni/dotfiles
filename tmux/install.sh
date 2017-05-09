@@ -4,7 +4,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	brew install tmux
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	sudo apt-get install libevent-dev ncurses-dev
-	if [[ `tmux -V` == *2.4 ]] then
+	if [[ `tmux -V` == *master ]] then
 		git clone https://github.com/tmux/tmux $HOME/.dotfiles/tmux/src/
 		cd $HOME/.dotfiles/tmux/src
 		sh autogent.sh
