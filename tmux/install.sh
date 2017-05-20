@@ -7,9 +7,12 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	if [[ `tmux -V` == *2.4 ]] then
 		git clone https://github.com/tmux/tmux $HOME/.dotfiles/tmux/src/
 		cd $HOME/.dotfiles/tmux/src
-		sh autogent.sh
+		sh autogen.sh
 		./configure && make
 		cp tmux /bin
 	fi
 	cd $HOME
 fi
+
+# Download tmuxinator
+gem install tmuxinator
