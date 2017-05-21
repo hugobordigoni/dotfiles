@@ -15,4 +15,4 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 fi
 
 # Download tmuxinator
-gem install tmuxinator
+sudo gem install tmuxinator
