@@ -29,3 +29,5 @@ On OSX, you'll need to install `brew` and `iterm2`
 * `<leader>g` to `GoToDefinition`
 * `<leader>d` to `GetDoc`
 * I choose to map `<leader>` to `,`
+* `NERDTree` opens when vim is opened on a directory, not on a file
+* Toggle `NERDTree` on and off with `<c-n>`
