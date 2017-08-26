@@ -19,6 +19,7 @@ On OSX, you'll need to install `brew` and `iterm2`
 * `<leader>%` to split panes vertically, `<leader>"`to split panes horizontally
 * `<c-h>`, `<c-j>`, `<c-k>`, `<c-l>`to navigate through panes
 * `<leader>q` to visualize pane number and enter number to go to this pane
+* `<leader>z` to zoom on current pane
 
 ### vim
 * `:sp` to split horizontally, `:vs` to split vertically
@@ -31,3 +32,5 @@ On OSX, you'll need to install `brew` and `iterm2`
 * I choose to map `<leader>` to `,`
 * `NERDTree` opens when vim is opened on a directory, not on a file
 * Toggle `NERDTree` on and off with `<c-n>`
+* `<c-o>` to jump to last location
+* `:set syntax=<wanted_syntax>` to set the syntax in a file with odd extensions

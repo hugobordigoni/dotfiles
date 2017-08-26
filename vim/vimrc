@@ -20,6 +20,7 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'avakhov/vim-yaml'
 call vundle#end()
 
 " Change Leader
@@ -64,10 +65,18 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 " Web indent
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.ts,*.js,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
-    \ set shiftwidth=2
+    \ set shiftwidth=2 |
+    \ set expandtab
+
+" Text File noexpandtab
+au BufNewFile,BufRead *.txt,*.csv
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+	\ set noexpandtab
 
 " Unnecessary Whitespace
 highlight BadWhitespace ctermbg=red guibg=red
@@ -89,6 +98,8 @@ let g:jedi#show_call_signatures = "1"
 let g:jedi#show_call_signatures_delay = 0
 let g:jedi#goto_definitions_command = "<leader>g"
 let g:jedi#documentation_command = "<leader>d"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#rename_command = "<leader>r"
 
 " python with virtualenv support
 py << EOF
