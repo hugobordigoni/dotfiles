@@ -21,6 +21,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'avakhov/vim-yaml'
+Plugin 'ekalinin/Dockerfile.vim'
 call vundle#end()
 
 " Change Leader
@@ -34,6 +35,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Normal behaviour of backspace (not necessary on all systems)
+set backspace=indent,eol,start
 
 " Add number
 set number
