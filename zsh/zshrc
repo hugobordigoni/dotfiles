@@ -11,12 +11,6 @@ export VISUAL=$EDITOR
 # Homebrew
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-# Postgres
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
-# Matlab
-export PATH=$PATH:/Applications/MATLAB_R2014a.app/bin
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each

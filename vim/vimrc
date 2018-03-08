@@ -21,6 +21,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'avakhov/vim-yaml'
+Plugin 'chase/vim-ansible-yaml'
 Plugin 'ekalinin/Dockerfile.vim'
 call vundle#end()
 
@@ -67,6 +68,9 @@ au BufNewFile,BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
+
+" Ansible syntax highlighting
+au BufRead,BufNewFile */ansible/*.yml,*/ansible/*.yaml set filetype=ansible
 
 " Web indent
 au BufNewFile,BufRead *.ts,*.js,*.html,*.css
