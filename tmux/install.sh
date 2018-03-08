@@ -4,7 +4,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	brew install tmux
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	sudo apt-get install libevent-dev ncurses-dev
-	if [[ `tmux -V` == *master ]]; then
+	if [[ (! $(type tmux > /dev/null)) || `tmux -V` == *master ]]; then
 		git clone https://github.com/tmux/tmux $HOME/.dotfiles/tmux/src/
 		cd $HOME/.dotfiles/tmux/src
 		# Install version 2.4 using git tag. (For tmuxinator compatibility)
@@ -12,6 +12,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 		sh autogen.sh
 		./configure && make
 		cp tmux /bin
+		cd .. && rm -rf $HOME/.dotfiles/tmux/src/
 	fi
 	cd $HOME
 fi
