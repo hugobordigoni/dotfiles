@@ -3,7 +3,7 @@
 
 if [ "$(uname)" == "Darwin" ]; then
 	# Even if vim is already installed, you'll need macvim
-	brew install macvim --with-override-system-vim
+	brew install macvim --with-override-system-vim --with-python@2
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	# We don't want default apt vim because we need x11 support (in particular for clipboard)
 	# Note this work only with local clipboard meaning if you ssh from machine A to machine B
