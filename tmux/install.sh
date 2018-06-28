@@ -11,7 +11,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 		git checkout tags/2.4 -b 2.4
 		sh autogen.sh
 		./configure && make
-		cp tmux /bin
+		sudo cp tmux /bin
 		cd .. && rm -rf $HOME/.dotfiles/tmux/src/
 	fi
 	cd $HOME

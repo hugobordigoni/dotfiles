@@ -6,11 +6,12 @@ Mine includes settings for `vim`, `tmux`, `zsh`, `iterm2`. It's mostly designed 
 For vim, it's highly inspired by [Real Python Tutorial](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/)
 
 ## Prerequisites
-On OSX, you'll need to install `brew` and `iterm2`
+You need `python`, `rubygem`, `git`, `automake`, `cmake` installed
+On OSX, you'll also need to install `brew` and `iterm2`
 
 ## Install
 * Run `git clone https://github.com/hugobordigoni/dotfiles.git ~/.dotfiles`
-* Run `cd ~/.dotfiles`, then `script/install` to install all the packages and `script/bootstrap` to create all the symlinks
+* Run `cd ~/.dotfiles`, then `script/bootstrap` to create all the symlinks then `script/install` to install all the packages
 
 ## Cheatsheet
 ### tmux
