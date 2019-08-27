@@ -18,7 +18,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	cd vim_source
 	./configure \
 		--enable-perlinterp=dynamic \
-		--enable-pythoninterp=dynamic \
+		--enable-pythoninterp \
 		--enable-rubyinterp=dynamic \
 		--enable-cscope \
 		--enable-gui=auto \

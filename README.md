@@ -6,7 +6,7 @@ Mine includes settings for `vim`, `tmux`, `zsh`, `iterm2`. It's mostly designed 
 For vim, it's highly inspired by [Real Python Tutorial](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/)
 
 ## Prerequisites
-You need `python`, `rubygem`, `git`, `automake`, `cmake` installed
+You need `python`, `rubygem`, `git`, `automake`, `cmake`, `pkg-config` installed
 On OSX, you'll also need to install `brew` and `iterm2`
 
 ## Install
